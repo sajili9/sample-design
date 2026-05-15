@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enchanted Threads</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+
+    <nav class="navbar">
+
+      <div class="logo">
+        Enchanted Threads
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="#">Home</a>
+        </li>
+
+        <li>
+          <a href="#gallery" onclick="loadCategory('bestsellers')">
+            Best Sellers
+          </a>
+        </li>
+
+        <li>
+          <a href="#gallery" onclick="loadCategory('customizeproducts')">
+            Customize Products
+          </a>
+        </li>
+
+        <li>
+          <a href="#gallery" onclick="loadCategory('hairclips')">
+            Hair Clips
+          </a>
+        </li>
+
+        <li>
+          <a href="#gallery" onclick="loadCategory('keychains')">
+            Keychains
+          </a>
+        </li>
+
+        <li>
+          <a href="#gallery" onclick="loadCategory('flowers')">
+            Flowers
+          </a>
+        </li>
+
+        <li>
+          <a href="#gallery" onclick="loadCategory('purses')">
+            Purses
+          </a>
+        </li>
+
+        <li>
+          <a href="#gallery" onclick="loadCategory('waist')">
+            Waist Accessories
+          </a>
+        </li>
+
+        <li>
+          <a href="#reviews">Reviews</a>
+        </li>
+
+        <li>
+          <a href="#about">About Us</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+      <div class="icons">
+        <div class="icons">
+
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search products..."
+    onkeyup="searchProducts()"
+  >
+
+  <span>🔍</span>
+
+  <span>🛒</span>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+</div>
+
+        <span>🔍</span>
+
+        <span>🛒</span>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          ☰
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Enchanted Threads</h1>
+
+      <p>
+        Handmade treasures crafted with love ✨
+      </p>
+
+      <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+        Explore Collection
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+      Enchanted Threads creates handmade aesthetic products including
+      hair clips, plushies, flowers, customized gifts, keychains and
+      cute accessories designed with love and creativity.
+    </p>
+
+  </section>
+
+  <!-- PRODUCT GALLERY -->
+
+  <section class="gallery-section" id="gallery">
+
+    <div class="section-title">
+
+      <h2 id="categoryTitle">
+        Best Sellers
+      </h2>
+
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+    </div>
+
+  </section>
+
+  <!-- REVIEWS -->
+
+  <section class="reviews" id="reviews">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review-cards">
+
+      <div class="review-card">
+
+        <p>
+          "Absolutely adorable products and amazing quality!"
+        </p>
+
+        <h4>- Priya</h4>
+
+      </div>
+
+      <div class="review-card">
+
+        <p>
+          "The hair clips are sooo pretty 💕"
+        </p>
+
+        <h4>- Aditi</h4>
+
+      </div>
+
+      <div class="review-card">
+
+        <p>
+          "Perfect gifts for friends. Loved the packaging."
+        </p>
+
+        <h4>- Mehak</h4>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="faq">
+
+    <h2>FAQ & Policies</h2>
+
+    <div class="faq-item">
+
+      <h3>How do I order?</h3>
+
+      <p>
+        You can order directly through Instagram or WhatsApp.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Delivery Time?</h3>
+
+      <p>
+        Usually 5-7 business days depending on customization.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Refund Policy</h3>
+
+      <p>
+        No refunds on customized handmade items.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+      Instagram: @enchantedthreads
+    </p>
+
+    <a href="#" class="whatsapp-btn">
+      WhatsApp Us
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Enchanted Threads • Handmade with love ✨
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
